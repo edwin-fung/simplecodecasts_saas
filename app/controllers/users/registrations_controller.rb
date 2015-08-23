@@ -1,5 +1,4 @@
-class Users::RegistrationController < Devis::RegistrationController
-    
+class Users::RegistrationsController < Devise::RegistrationsController
     def create
         super do |resource|
             if params[:plan]
@@ -12,5 +11,4 @@ class Users::RegistrationController < Devis::RegistrationController
             end
         end
     end
-    
 end
